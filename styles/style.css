@@ -2,22 +2,84 @@ h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     justify-content: center;
     display: flex;
-    width: 100%;
+    color: rgb(145, 145, 145);
+    opacity: 20%;
+    animation: fadeIn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
+body {
+    background: #F5F5F5 url("https://c.tenor.com/tr-K0EESp8EAAAAC/cherry-blossom-falling.gif") repeat scroll 0 0;
+}
 main {
-    margin: 20px;
-    width: 100%;
+    margin: 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10rem;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+button {
+    background-color: rgb(158, 152, 152);
+    border-radius: 20px 20px 20px 20px;
 
 }
 
-.calculation {
+.addition {
     border: 1px solid black;
     padding: 20px;
     background-color: pink;
+    align-content: center;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
 }
-.add-output {
-   
+
+.subtraction {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
+
+}
+
+.multiplication {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
+}
+
+.division {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
+}
+
+.final {
+    font-weight: bold;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
