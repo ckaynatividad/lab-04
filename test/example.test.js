@@ -1,31 +1,31 @@
 // IMPORT MODULES under test here:
-import { add } from './calculations.js';
-import { sub } from './calculations.js';
-import { mul } from './calculations.js';
-import { div } from './calculations.js';
+import { add } from '../calculations.js';
+import { sub } from '../calculations.js';
+import { mul } from '../calculations.js';
+import { div } from '../calculations.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
 
-test('test add function', (expect) => {
+test('add', (expect) => {
     const input1 = 2;
     const input2 = 2;
     const expected = 4;
 
     const actual = add(input1, input2);
 
-    expect.equal(actual, expected, 'add test');
+    expect.equal(actual, expected);
 });
 
 
-test('test sub function', (expect) => {
+test('sub', (expect) => {
     const input1 = 2;
     const input2 = 2;
     const expected = 0;
 
     const actual = sub(input1, input2);
 
-    expect.equal(actual, expected, 'sub test');
+    expect.equal(actual, expected);
 });
 
 test('test mul function', (expect) => {
@@ -35,7 +35,7 @@ test('test mul function', (expect) => {
 
     const actual = mul(input1, input2);
 
-    expect.equal(actual, expected, 'mul test');
+    expect.equal(actual, expected);
 });
 
 test('test div function', (expect) => {
@@ -45,5 +45,5 @@ test('test div function', (expect) => {
 
     const actual = div(input1, input2);
 
-    expect.equal(actual, expected, 'div test');
+    expect.equal(actual, expected);
 });
