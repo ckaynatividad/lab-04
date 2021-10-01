@@ -59,6 +59,20 @@ button {
     box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
 }
 
+.pyth {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
+}
+
+.sqrt {
+    border: 1px solid black;
+    padding: 20px;
+    background-color: pink;
+    box-shadow: 12px 12px 2px 1px rgba(103, 77, 86, 0.2);
+}
+
 .final {
     font-weight: bold;
     animation: fadeIn;

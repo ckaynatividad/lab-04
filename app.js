@@ -1,3 +1,4 @@
+
 import { add } from './calculations.js';
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -49,11 +50,39 @@ const divInput2 = document.getElementById('div-input-2');
 const divButton = document.getElementById('div-btn');
 const divAnswer = document.getElementById('div-output');
 
-divButton.addEventListener('click', ()=>{
+divButton.addEventListener('click', ()=>{  
     const value1 = Number(divInput1.value);
     const value2 = Number(divInput2.value);
     const result = div(value1, value2);
     console.log(result);
     divAnswer.textContent = result;
     divAnswer.classList.add('final');
+});
+
+import { sqrt } from './calculations.js';
+const sqrtInput1 = document.getElementById('sqrt-input-1');
+const sqrtButton = document.getElementById('sqrt-btn');
+const sqrtAnswer = document.getElementById('sqrt-output');
+
+sqrtButton.addEventListener('click', ()=>{
+    const value1 = Number(sqrtInput1.value);
+    const result = sqrt(value1);
+    console.log(result);
+    sqrtAnswer.textContent = result;
+    sqrtAnswer.classList.add('final');
+});
+
+import { pyth } from './calculations.js';
+const pythInput1 = document.getElementById('pyth-input-1');
+const pythInput2 = document.getElementById('pyth-input-2');
+const pythButton = document.getElementById('pyth-btn');
+const pythAnswer = document.getElementById('pyth-output');
+
+pythButton.addEventListener('click', ()=>{
+    const value1 = Number(pythInput1.value);
+    const value2 = Number(pythInput2.value);
+    const result = pyth(value1, value2);
+    console.log(result);
+    pythAnswer.textContent = result;
+    pythAnswer.classList.add('final');
 });
