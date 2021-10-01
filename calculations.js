@@ -32,3 +32,7 @@ export function pyth(num1, num2) {
 export function sqrt(num1) {
     return Math.sqrt(num1);
 }
+
+export function rem(num1, num2) {
+    return num1 % num2;
+}

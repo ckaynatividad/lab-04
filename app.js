@@ -59,6 +59,8 @@ divButton.addEventListener('click', ()=>{
     divAnswer.classList.add('final');
 });
 
+
+
 import { sqrt } from './calculations.js';
 const sqrtInput1 = document.getElementById('sqrt-input-1');
 const sqrtButton = document.getElementById('sqrt-btn');
@@ -86,3 +88,34 @@ pythButton.addEventListener('click', ()=>{
     pythAnswer.textContent = result;
     pythAnswer.classList.add('final');
 });
+
+import { divInt } from './calculations.js';
+const divIntInput1 = document.getElementById('divInt-input-1');
+const divIntInput2 = document.getElementById('divInt-input-2');
+const divIntButton = document.getElementById('divInt-btn');
+const divIntAnswer = document.getElementById('divInt-output');
+
+divIntButton.addEventListener('click', ()=>{
+    const value1 = Number(divIntInput1.value);
+    const value2 = Number(divIntInput2.value);
+    const result = divInt(value1, value2);
+    console.log(result);
+    divIntAnswer.textContent = result;
+    divIntAnswer.classList.add('final');
+});
+
+import { rem } from './calculations.js';
+const remInput1 = document.getElementById('rem-input-1');
+const remInput2 = document.getElementById('rem-input-2');
+const remButton = document.getElementById('rem-btn');
+const remAnswer = document.getElementById('rem-output');
+
+remButton.addEventListener('click', ()=>{
+    const value1 = Number(remInput1.value);
+    const value2 = Number(remInput2.value);
+    const result = rem(value1, value2);
+    console.log(result);
+    remAnswer.textContent = result;
+    remAnswer.classList.add('final');
+});
+
