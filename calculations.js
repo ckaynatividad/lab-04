@@ -21,7 +21,7 @@ export function div(num1, num2) {
     return num1 / num2;
 }
 
-export function divInt(num1,num2) {
+export function divInt(num1, num2) {
     return Math.floor(num1 / num2);
 }
 

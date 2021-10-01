@@ -10,42 +10,42 @@ import { mul } from '/..calculations.js';
 import { div } from '/..calculations.js';
 
 
-test('add', (expect) => {
+test('test add function', (expect) => {
     const input1 = 2;
     const input2 = 2;
     const expected = 4;
 
     const actual = add(input1, input2);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'add test');
 });
 
-test('sub', (expect) => {
+test('test sub function', (expect) => {
     const input1 = 2;
     const input2 = 2;
     const expected = 0;
 
     const actual = sub(input1, input2);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'sub test');
 });
 
-test('mul', (expect) => {
+test('test mul function', (expect) => {
     const input1 = 2;
     const input2 = 3;
     const expected = 6;
 
     const actual = mul(input1, input2);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'mul test');
 });
 
-test('div', (expect) => {
+test('test div function', (expect) => {
     const input1 = 2;
     const input2 = 2;
     const expected = 1;
 
     const actual = div(input1, input2);
 
-    expect.equal(actual, expected);
+    expect.equal(actual, expected, 'div test');
 });
